@@ -17,4 +17,4 @@ gunicorn.py
 .coverage
 .vscode
 __pycache__
-.state
+
