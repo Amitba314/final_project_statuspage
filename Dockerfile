@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM python:3.10
 
 
 #copy everything to the container
@@ -16,6 +16,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN /opt/status-page/upgrade.sh
 RUN python3 -m venv . 
 RUN . /opt/status-page/venv/bin/activate
+RUN python3 ./statuspage/manage.py createsuperuser --no-input --email yaringabay124@gmail.com --username ubuntu
 
 #ALLOW PORTS
 EXPOSE 8000 5432 6379
