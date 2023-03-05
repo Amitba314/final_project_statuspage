@@ -8,7 +8,7 @@ resource "kubernetes_service_v1" "app-server-service" {
       test = kubernetes_deployment.app-server.metadata.0.labels.test
     }
     port {
-      port = 5678
+      port = 8000
     }
   }
 }
