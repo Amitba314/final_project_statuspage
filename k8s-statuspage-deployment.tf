@@ -27,7 +27,7 @@ resource "kubernetes_deployment" "app-server" {
 
       spec {
         container {
-          image = "yaringabay1/app_60:${var.update_image_tag}"
+          image = "yaringabay1/final_project:${var.update_image_tag}"
           name  = "actual-cont-app"
           
           port {
