@@ -8,7 +8,7 @@ resource "kubernetes_deployment" "app-server" {
   }
   spec {
     #TODO: Rechange the nun of replicas from 0 to 3
-    replicas = 0  
+    replicas = 3  
 
     selector {
       match_labels = {
@@ -29,6 +29,11 @@ resource "kubernetes_deployment" "app-server" {
         container {
           image = "yaringabay1/app_60:${var.update_image_tag}"
           name  = "actual-cont-app"
+          
+          port {
+            container_port = 8000
+          }
+          
 
           resources {
             limits = {
