@@ -25,5 +25,5 @@ jobs:
       - name: Initialize Terraform
         run: terraform init
       - name: Apply Terraform changes
-        run: terraform apply -var update_image_tag=${{ github.sha }}
+        run: terraform apply -input=false -auto-approve -var update_image_tag=${{ github.sha }}
 
