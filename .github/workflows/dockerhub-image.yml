@@ -24,6 +24,7 @@ jobs:
         run: docker logout
       - name: Initialize Terraform
         run: terraform init
-        cwd: Infrastructure
+        working-directory: Infrastructure
       - name: Apply Terraform changes
         run: terraform apply -input=false -auto-approve -var update_image_tag=${{ github.sha }}
+        working-directory: Infrastructure
