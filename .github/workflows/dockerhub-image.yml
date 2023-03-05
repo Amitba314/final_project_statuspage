@@ -25,4 +25,5 @@ jobs:
       - name: Initialize Terraform
         run: terraform init
       - name: Apply Terraform changes
-        run: terraform plan
+        run: terraform apply -var update_image_tag=${{ github.sha }}
+
