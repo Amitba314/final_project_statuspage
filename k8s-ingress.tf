@@ -15,12 +15,12 @@ resource "kubernetes_ingress_v1" "ingress" {
             service {
               name = "statuspage-service"
               port {
-                number = 5678
+                number = 8000
               }
             }
           }
 
-          path = "/app1"
+          path = "/"
         }
       }
     }
