@@ -9,6 +9,7 @@ resource "kubernetes_service_v1" "app-server-service" {
     }
     port {
       port = 8000
+      target_port = 8000
     }
   }
 }
