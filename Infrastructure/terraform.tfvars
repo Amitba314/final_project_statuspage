@@ -1,3 +1,3 @@
-cluster_id = "CLUSTER-HOPE-TRY"
+cluster_id = "yarin-full-try"
 
 update_image_tag = ""
