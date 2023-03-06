@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = "statuspage-s3"
+    bucket         = "only-gabay-project"
     key            = "terraform.tfstate"
-    region         = "us-east-2"
-    access_key     = "AKIAX7K52CAD6NPNZBWI"
-    secret_key     = "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"
+    region         = "us-east-1"
+    access_key     = "AKIAVDQNLGLNKUZUVOSJ"
+    secret_key     = "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"
   }
 }
