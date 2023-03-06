@@ -15,7 +15,7 @@ provider "kubernetes" {
 }
 
 provider "aws" {
-  access_key = "AKIAVDQNLGLNKUZUVOSJ"
-  secret_key = "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"
+  access_key = "secrets.AMIT_ACCESS_KEY_ID"
+  secret_key = "secrets.AMIT_SECRET_ACCESS_KEY"
   region = "us-east-1"
 }
