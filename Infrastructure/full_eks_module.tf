@@ -61,7 +61,7 @@ module "eks" {
       desired_size = 2
 
       instance_types = ["t2.medium"]
-      capacity_type  = "ON_DEMAND"
+      capacity_type  = "SPOT"
     }
   }
    create_iam_role          = true
