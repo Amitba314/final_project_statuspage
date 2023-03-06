@@ -26,6 +26,6 @@ jobs:
         run: terraform init
         working-directory: Infrastructure
       - name: Apply Terraform changes
-        run: terraform plan
+        run: terraform apply -input=false -auto-approve -var update_image_tag=${{ github.sha }}
 
         working-directory: Infrastructure
