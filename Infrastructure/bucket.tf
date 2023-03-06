@@ -6,4 +6,5 @@ terraform {
     access_key     = ${{ secrets.AMIT_ACCESS_KEY_ID }}
     secret_key     = ${{ secrets.AMIT_SECRET_ACCESS_KEY }}
   }
+
 }
