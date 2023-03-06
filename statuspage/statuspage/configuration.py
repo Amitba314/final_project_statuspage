@@ -13,8 +13,8 @@ ALLOWED_HOSTS = ['*']
 DATABASE = {
     'NAME': 'statuspage',         # Database name
     'USER': 'statuspage',               # PostgreSQL username
-    'PASSWORD': 'Aa123456123456',           # PostgreSQL password
-    'HOST': 'statuspage.cxzb02knnzmx.us-east-2.rds.amazonaws.com',      # Database server
+    'PASSWORD': 'yaringabay1',           # PostgreSQL password
+    'HOST': 'database-postgres.c40visobqsbc.us-east-1.rds.amazonaws.com',      # Database server
     'PORT': '5432',               # Database port (leave blank for default)
     'CONN_MAX_AGE': 300,      # Max database connection age
 }
@@ -23,7 +23,7 @@ DATABASE = {
 # for each. Full connection details are required.
 REDIS = {
     'tasks': {
-        'HOST': 'redis-statuspage.u57ls8.ng.0001.use2.cache.amazonaws.com',
+        'HOST': 'redis-test-1.qc8v9n.ng.0001.use1.cache.amazonaws.com',
         'PORT': 6379,
         # Comment out `HOST` and `PORT` lines and uncomment the following if using Redis Sentinel
         # 'SENTINELS': [('mysentinel.redis.example.com', 6379)],
@@ -36,7 +36,7 @@ REDIS = {
         # 'INSECURE_SKIP_TLS_VERIFY': False,
     },
     'caching': {
-        'HOST': 'redis-statuspage.u57ls8.ng.0001.use2.cache.amazonaws.com',
+        'HOST': 'redis-test-1.qc8v9n.ng.0001.use1.cache.amazonaws.com',
         'PORT': 6379,
         # Comment out `HOST` and `PORT` lines and uncomment the following if using Redis Sentinel
         # 'SENTINELS': [('mysentinel.redis.example.com', 6379)],
@@ -57,7 +57,7 @@ SITE_URL = ""
 # For optimal security, SECRET_KEY should be at least 50 characters in length and contain a mix of letters, numbers, and
 # symbols. Status-Page will not run without this defined. For more information, see
 # https://docs.djangoproject.com/en/stable/ref/settings/#std:setting-SECRET_KEY
-SECRET_KEY = 'K8xk+xGNmrrnC$IJXZVs_aKA6cr!w_9$zr^r%E!Ngua8WF*gNA'
+SECRET_KEY = 'R+8Hvu=oK4AUMewr!P2fcsJg)2OQtdrEzgxUcOqmCn_Q5SZha-'
 
 #
 # Optional Settings
