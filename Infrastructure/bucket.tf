@@ -1,9 +1,9 @@
-terraform {
-  backend "s3" {
-    bucket         = "only-gabay-project"
-    key            = "terraform.tfstate"
-    region         = "us-east-1"
-    access_key     = "AKIAVDQNLGLNKUZUVOSJ"
-    secret_key     = "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"
-  }
-}
+# terraform {
+#   backend "s3" {
+#     bucket         = "only-gabay-project"
+#     key            = "terraform.tfstate"
+#     region         = "us-east-2"
+#     access_key     = ${{ secrets.AMIT_ACCESS_KEY_ID }}
+#     secret_key     = ${{ secrets.AMIT_SECRET_ACCESS_KEY }}
+#   }
+# }
